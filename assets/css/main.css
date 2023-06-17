@@ -21,7 +21,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #888;
+  color: #535353;
   overflow-x: hidden;
   font-size: 15px;
   font-size: 2rem;
@@ -1049,7 +1049,7 @@ ol {
 
 .section-title h2,
 .vision-mision {
-  font-size: 50px;
+  font-size: 35px;
   margin-bottom: 25px;
   line-height: 42px;
   text-transform: capitalize;
@@ -1125,8 +1125,8 @@ ol {
 
 /* One Click Scrool Top Button*/
 .scroll-top {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   line-height: 45px;
   background: var(--secundary-color);
   display: -webkit-box;
@@ -2032,9 +2032,10 @@ span.quienes-somos {
 
 .hero-area .hero-content p {
   margin-top: 30px;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   line-height: 30px;
+  font-weight: 800;
 }
 
 .hero-area .hero-content .button {
@@ -2228,6 +2229,9 @@ span.quienes-somos {
 ========================================*/
 .features {
   background-color: #f9f9f9;
+  /* background-image: url(gradient_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 .features .section-title {
@@ -2283,7 +2287,7 @@ span.quienes-somos {
     Our Achievement CSS
 ========================================*/
 .our-achievement {
-  background-color: var(--main-color);
+  background-color: black;
   text-align: center;
   padding: 130px 0;
 }
@@ -2461,7 +2465,7 @@ span.quienes-somos {
     Call To Action CSS
 ========================================*/
 .call-action {
-  background-color: var(--main-color);
+  background-color: black;
 }
 
 .call-action .cta-content {
@@ -2990,7 +2994,7 @@ h3.vision-mision-h3 {
 }
 
 .vision-mision-p {
-  text-align: left;
+  text-align: center;
 }
 .vision-mision-section {
   padding: 50px;
@@ -2998,7 +3002,54 @@ h3.vision-mision-h3 {
 }
 
 /* .vision-mision-container {
-} */
+} 
 .vision-mision {
   color: rgb(0, 0, 0);
+}
+/* ==============
+
+ gallery of images
+ 
+============== */
+.gallery {
+  display: flex;
+  height: 500px;
+}
+.gallery > img {
+  flex: 1;
+  min-width: 0;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.gallery > img:hover {
+  flex: 5;
+}
+
+/* whatsApp btn */
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+
+  z-index: 100;
+  bottom: 25px;
+  right: 90px;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+.vision,
+.mision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
